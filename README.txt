@@ -1,28 +1,13 @@
-REMIX DEFAULT WORKSPACE
+ USDT Fork - Studio Blockchain
 
-Remix default workspace is present when:
-i. Remix loads for the very first time 
-ii. A new workspace is created with 'Default' template
-iii. There are no files existing in the File Explorer
+This is a 1:1 fork of the official Tether USD (USDT) smart contract, deployed on Studio Blockchain.
+By mirroring the original audited Tether contract, this fork inherits all the security, stability, and reliability of the industry-standard USDT implementation.
 
-This workspace contains 3 directories:
+🔹 Why This Fork?
+✅ Fully compatible with the original Tether contract
+✅ Retains all security & audit benefits of USDT
+✅ Designed for Studio Blockchain's stablecoin ecosystem
+✅ Supports minting (issue) & burning (redeem) by the contract owner
+✅ Implements blacklisting & pausable features for security
 
-1. 'contracts': Holds three contracts with increasing levels of complexity.
-2. 'scripts': Contains four typescript files to deploy a contract. It is explained below.
-3. 'tests': Contains one Solidity test file for 'Ballot' contract & one JS test file for 'Storage' contract.
-
-SCRIPTS
-
-The 'scripts' folder has four typescript files which help to deploy the 'Storage' contract using 'web3.js' and 'ethers.js' libraries.
-
-For the deployment of any other contract, just update the contract name from 'Storage' to the desired contract and provide constructor arguments accordingly 
-in the file `deploy_with_ethers.ts` or  `deploy_with_web3.ts`
-
-In the 'tests' folder there is a script containing Mocha-Chai unit tests for 'Storage' contract.
-
-To run a script, right click on file name in the file explorer and click 'Run'. Remember, Solidity file must already be compiled.
-Output from script will appear in remix terminal.
-
-Please note, require/import is supported in a limited manner for Remix supported modules.
-For now, modules supported by Remix are ethers, web3, swarmgw, chai, multihashes, remix and hardhat only for hardhat.ethers object/plugin.
-For unsupported modules, an error like this will be thrown: '<module_name> module require is not supported by Remix IDE' will be shown.
+This contract will serve as Studio Blockchain’s native USDT-equivalent stablecoin, with planned cross-chain bridge integration to allow seamless transfers between Studio Blockchain, Ethereum, and other EVM networks.
